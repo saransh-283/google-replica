@@ -12,7 +12,7 @@ html, body {
     font-size: 0.9rem;
 }
 
-#navbar div {
+#right {
     float: right;
     margin-right: 1rem;
 }
@@ -28,7 +28,10 @@ html, body {
     color: #333333;
     text-decoration: underline;
 }
-
+#sign-in {
+    background: #4285f4;
+    color: white !important;
+}
 /**Center**/
 #center {
     height:90vh;
@@ -46,24 +49,32 @@ html, body {
 }
 #search {
     position: absolute;
-    left: -7rem;
+    left: -8rem;
     width: 30rem;
-    border: 1px solid #555555;
-    padding: 0.5rem 2rem;
+    border: 1px solid #eeeeee;
+    padding: 0.7rem 3rem;
     margin: 2rem 0;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
-#icon {
+#icon-srch {
     position: absolute;
-    left: -6.2rem;
-    top: 2.5rem;
+    left: -6.8rem;
+    top: 2.8rem;
     z-index: 1;
+    color: #aaaaaa;
+}
+#icon-mic {
+    position: absolute;
+    right: -6.8rem;
+    top: 2.8rem;
+    z-index: 1;
+    color: #aaaaaa;
 }
 #search:hover {
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 0 0 10px 1px #cccccc;
 }
 /**Image**/
 img {
@@ -77,23 +88,42 @@ img {
     display: flex;
     justify-content: space-between;
 }
-#btns {
-    border: none;
+.btns {
+    border: 1px solid #eeeeee;
     padding: 0.5rem 1rem;
     background: #eeeeee;
+}
+#btn1:hover {
+    border: 1px solid #555555;
+    background: #f0f0f0;
+    color: #000000;
+    cursor: pointer;
+}
+#btn2:hover {
+    border: 1px solid #555555;
+    background: #f0f0f0;
+    color: #000000;
+    cursor: pointer;
 }
 /**Media**/
 @media(max-width: 480px) {
     img {
         width: 100%;
     }
-    #icon {
+    #icon-srch {
         position: absolute;
         left: -1.1rem;
     }
+    #icon-mic {
+        position: absolute;
+        right: -1.1rem;
+    }
     #search {
         width: 100%;
-        padding: 0.5rem 2rem;
+        padding: 0.7rem 2rem;
         left: -2rem;
+    }
+    #left a {
+        display: none;
     }
 }
